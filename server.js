@@ -1,6 +1,8 @@
   
 const express = require('express');
 const path = require('path');
+var cors = require('cors');
+
 
 /* eslint-disable no-console */
 
@@ -8,6 +10,9 @@ console.log('Starting express server...');
 
 const port = process.env.PORT || 8080;
 const app = express();
+
+
+app.use(cors({ origin: 'https://trello.com' }));
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 
