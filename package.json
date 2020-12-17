@@ -9,7 +9,8 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "build": "parcel build src/**/*.html"
+    "build": "parcel build src/**/*.html",
+    "lint": "eslint src"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -18,6 +19,9 @@
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "parcel-bundler": "^1.12.4"
   }
 }

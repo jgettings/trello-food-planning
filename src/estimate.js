@@ -1,21 +1,17 @@
-/* global TrelloPowerUp */
+const t = TrelloPowerUp.iframe();
 
-var t = TrelloPowerUp.iframe();
-
-window.estimate.addEventListener('submit', function(event){
+window.estimate.addEventListener('submit', (event) => {
   event.preventDefault();
   return t.set('card', 'shared', 'estimate', window.estimateSize.value)
-  .then(function(){
-    t.closePopup();
-  });
+    .then(() => {
+      t.closePopup();
+    });
 });
 
-t.render(function(){
-  return t.get('card', 'shared', 'estimate')
-  .then(function(estimate){
+t.render(() => t.get('card', 'shared', 'estimate')
+  .then((estimate) => {
     window.estimateSize.value = estimate;
   })
-  .then(function(){
+  .then(() => {
     t.sizeTo('#estimate').done();
-  });
-});
+  }));
