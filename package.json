@@ -1,0 +1,16 @@
+{
+  "name": "trello-food-planning",
+  "version": "1.0.0",
+  "description": "Trello Power-Up",
+  "main": "index.js",
+  "repository": "https://github.com/jgettings/trello-food-planning.git",
+  "author": "Jen Gettings <jennifer.wystup@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
