@@ -1,4 +1,4 @@
-import { createShoppingList } from './shoppingList';
+import createShoppingList from './shoppingList';
 
 TrelloPowerUp.initialize({
   'card-buttons': () => ([{
@@ -15,11 +15,9 @@ TrelloPowerUp.initialize({
     text: 'Create Shopping List',
     callback: (trello) => createShoppingList(trello, list),
   }])),
-  // popup to choose which cards to use, default select all
-  // also input to edit name of shopping list card
-  // list = { name, id }
 });
 
 // TODO
 // font awesome
 // prettier
+// tests
