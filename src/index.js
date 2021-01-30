@@ -13,10 +13,11 @@ TrelloPowerUp.initialize({
     text: 'Create Shopping List',
     callback: (trello) => {
       console.log(list);
-      trello.modal({
-        title: 'Create Shopping List',
-        url: 'shoppingList/options.html',
-      });
+      console.log(trello);
+      // trello.modal({
+      //   title: 'Create Shopping List',
+      //   url: 'shoppingList/options.html',
+      // });
     },
   }])),
 });
@@ -25,3 +26,6 @@ TrelloPowerUp.initialize({
 // font awesome
 // prettier
 // tests
+
+// something happened with the heroku deploy and it isn't serving up the pages
+// wtf
