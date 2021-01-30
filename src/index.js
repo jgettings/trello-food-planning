@@ -9,10 +9,15 @@ TrelloPowerUp.initialize({
       });
     },
   }]),
-  'board-buttons': () => ([
-    {
-      icon: 'https://cdn.glitch.com/1b42d7fe-bda8-4af8-a6c8-eff0cea9e08a%2Frocket-ship.png?1494946700421',
-      text: 'Create Shopping List',
+  'list-actions': (t) => t.list('name', 'id').then((list) => ([{
+    text: 'Create Shopping List',
+    callback: (x) => {
+      console.log('hi');
+      console.log(list);
+      console.log(x);
+      console.log(t);
     },
-  ]),
+  }])),
+  // popup to choose which cards to use, default select all
+  // also input to edit name of shopping list card
 });
