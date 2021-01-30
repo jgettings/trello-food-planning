@@ -11,9 +11,9 @@ TrelloPowerUp.initialize({
   }]),
   'list-actions': (t) => t.list('name', 'id').then((list) => ([{
     text: 'Create Shopping List',
-    callback: (trello) => {
+    callback: (tt) => {
       console.log(list);
-      console.log(trello);
+      console.log(tt);
       // trello.modal({
       //   title: 'Create Shopping List',
       //   url: 'shoppingList/options.html',
