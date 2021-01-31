@@ -24,7 +24,7 @@ const fs = require('fs');
 console.log(`Express server started on port ${port}`);
 console.log(process.cwd());
 console.log(__dirname);
-console.log(fs.readdirSync(__dirname));
+console.log(fs.readdirSync(path.resolve(__dirname, 'dist')));
 
 /* eslint-disable */
 // function getFiles (dir, files_){
