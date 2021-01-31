@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "build": "parcel build src/**/*.html",
+    "build": "parcel build src/index.html",
     "lint": "eslint src"
   },
   "dependencies": {
