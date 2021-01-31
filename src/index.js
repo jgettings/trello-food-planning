@@ -14,10 +14,10 @@ TrelloPowerUp.initialize({
     callback: (trello) => {
       console.log(list);
       console.log(trello);
-      // trello.modal({
-      //   title: 'Create Shopping List',
-      //   url: 'shoppingList/options.html',
-      // });
+      trello.modal({
+        title: 'Create Shopping List',
+        url: 'shoppingList/options.html',
+      });
     },
   }])),
 });
