@@ -19,9 +19,12 @@ app.get('*', (_, res) => {
 
 app.listen(port);
 
+const fs = require('fs');
+
 console.log(`Express server started on port ${port}`);
 console.log(process.cwd());
 console.log(__dirname);
+console.log(fs.readdrSync(__dirname));
 
 /* eslint-disable */
 // function getFiles (dir, files_){
