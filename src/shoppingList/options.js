@@ -1,5 +1,6 @@
 const t = TrelloPowerUp.iframe();
 
-t.render(() => t.get('list').then((x) => {
-  console.log(x);
-}));
+t.render(() => {
+  const context = t.getContext();
+  console.log(context);
+});
